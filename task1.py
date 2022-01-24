@@ -12,6 +12,14 @@ assert find('fish') == 5
 def find(needle):
     pass
 
+def find(inpt):
+    file = 'task01.txt'
+    fileopen = open(file, 'r')
+    count = (-1)
+    for i in file:
+        count = count + 1
+        if inpt in i:
+            return count
 
 if __name__ == "__main__":
     assert find('apple') == 0
